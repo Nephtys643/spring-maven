@@ -65,5 +65,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build & Push Docker image
         run: |
-          docker build -t ${{ secrets.genesis2005 }}/springboot-app:latest .
-          docker push ${{ secrets.genesis2005 }}/springboot-app:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/springboot-app:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/springboot-app:latest
